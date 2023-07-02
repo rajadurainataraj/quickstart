@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
-import {DevTool} from '@hookform/devtools'
+import { DevTool } from '@hookform/devtools'
+// import styled from 'styled-components'
 export default function Login() {
     console.log("login called")
 
@@ -15,6 +16,7 @@ export default function Login() {
     const onSubmit = (data:FormValues) => {
         console.log("onSubmit called",data)
     }
+    // const styledButton = button.styled``
     return (
         <>
             <div>Login</div>   
@@ -29,7 +31,6 @@ export default function Login() {
                 </form>
                 <DevTool control={control}/>
                 </div>
-            
         </>
 )
 }

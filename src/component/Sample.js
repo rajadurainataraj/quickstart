@@ -8,9 +8,9 @@ import CreateOrg2 from "./CreateOrg2"
 const Sample = () => {
   return (
     <>
-      {/* <Header />
-      <Body /> */}
-      <CreateOrg2 />
+      <Header />
+      <Body />
+      {/* <CreateOrg2 /> */}
     </>
   )
 }

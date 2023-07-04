@@ -31,14 +31,29 @@ const CreateOrganization1 = ({ stepCount, heading }) => {
           {stepCount === "2" && (
             <>
               <InputContainer label={"Portal Display Name"} />
+              <h4>Upload your logo</h4>
               <div className="uploadImg">
-                <h4>Upload your logo</h4>
                 <img src={uploadImg} alt="upload img" />
+                <h4>Upload Image</h4>
               </div>
             </>
           )}
+          {stepCount === "3" && (
+            <>
+              <InputContainer label="Timezone" />
+              <InputContainer label="Currency" />
+            </>
+          )}
+
+          <div></div>
+          <div className="orgBtnContainer">
+            {stepCount !== "1" && <div className="previousBtn">Previous</div>}
+
+            <button className="continueBtn">Continue</button>
+          </div>
         </div>
       </div>
+      <img src={landingImg} alt="landingImg" className="bgImgOrg" />
     </div>
   )
 }

@@ -84,7 +84,12 @@ p {
   padding-left: 60px;
 }
 .createOrgContainer {
+  display: flex;
+  flex-direction: column;
   margin-left: 10px;
+  background: linear-gradient(90deg, #fff 80%, #006bff 20%);
+  height: 100vh;
+  width: 100vw;
 }
 .createOrgSubContainer h3 {
   font-size: 20px;
@@ -129,7 +134,7 @@ form label {
   font-size: 24px;
   border: 1px solid #bfbfbf;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .inputContainer ::placeholder {
   color: #dbdbdb;
@@ -137,14 +142,42 @@ form label {
 }
 .uploadImg {
   display: flex;
-  padding: 10px 10px;
-  border: 1px solid gray;
-  width: 150px;
-
+  padding: 10px 16px;
+  border: 1px solid #b3b3b3;
+  width: 170px;
   align-items: center;
   color: #006bff;
+  border-radius: 10px;
   font-size: 21px;
 }
 .uploadImg h4 {
   margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.orgBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 21px;
+  align-items: center;
+}
+.previousBtn {
+  color: #006bff;
+  font-weight: semi-bold;
+}
+.continueBtn {
+  background-color: #006bff;
+  padding: 15px 60px;
+  border-radius: 8px;
+  color: white;
+  font-size: 21px;
+  border: none;
+}
+.bgImgOrg {
+  position: absolute;
+  width: 580px;
+  height: 577px;
+  top: 22%;
+  left: 66%;
 }
